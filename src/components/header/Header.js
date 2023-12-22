@@ -6,7 +6,7 @@ function Header(props){
 
     return(
         <div className="Header">
-            <h1 className="title">Local Taxation Dashboard</h1>
+            <h1 className="title">Taxation Dashboard</h1>
             <section className='notifUser'>
                 <FontAwesomeIcon className='iBell' icon={faBell} />
                 <div className='user'>
