@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+input:focus{
+    outline: none;
+}
+
+.App{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: "header header"
+                          "aside main";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 10vh 5fr;
+    background-color: #eff5f5;
+}
+
+/* header comp */
+.Header{
+    background-color: #ffffff;
+    grid-area: header;
+    border-bottom: 2px solid #d6e4e5;
+    max-height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1%;
+}
+
+.title{
+    margin-left: 1%;
+    flex: 9;
+}
+
+.notifUser{
+    flex: 1;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-left: 10%;
+}
+
+.Bell{
+    flex: 1;
+}
+
+.user{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.userIcon{
+    margin: 0;
+    padding: 0;
+}
+
+.userName{
+    padding: 0;
+    margin: 0;
+    font-size: 30%;
+    font-weight: bold;
+}
+
+/* main display styling */
+
+.main{
+    grid-area: main;
+    border: 1px solid #d6e4e5;
+    margin: 0.75%;
+    padding: 2.5vh 5vh;
+    overflow: auto;
+    background-color: #ffffff;
+}
+
+/* Webkit-based browsers (Safari, Chrome) */
+    .main::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+  .main::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  .main::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+  
+  /* Firefox */
+  .main {
+    scrollbar-width: 5px;
+    scrollbar-color: rgba(0, 0, 0, 0.5) #ffffff;
+  }
+  
+  /* Edge */
+  .main {
+    -ms-overflow-style: scrollbar;
+  }
+
+  /* .main::-webkit-scrollbar {
+    display: none;
+  } */
+  
+  
+
+/* Liste comp */
+
+.Liste{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    flex: 1;
+    display: flex;
+    padding: 1px;
+    margin: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopIcon{
+        /* stylings for library icon */
+    /* flex: 1;
+    font-size: 300%;
+    color: #eb6440; */
+
+        /* styling for asset icon */
+    flex: 1;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 16px;
+}
+
+.shopCount{
+    color: #eb6440;
+}
+
+.left{
+    flex: 7;
+}
+
+.addBtn{
+    flex: 1;
+    height: 50%;
+    background-color: #497174;
+    color: #ffffff;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.disc{
+    flex: 1;
+    padding: 1px;
+    margin: 1px;
+    width: 80%;
+}
+
+.bot{
+    width: 100%;
+    flex: 5;
+    margin-top: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    gap: 2.5%;
+}
+
+.souk{
+    flex: 0 1 31.459%;
+    margin-bottom: 2.5%;
+    padding: 7.5px 0;
+    height: 75px;
+    border: 1.5px solid #000000 ;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px #000000bf;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 125%;
+    text-align: center;
+}
+
+.souk:hover{
+    color: #eb6440;
+    border-color: #eb6440;
+}
+
+/* aside comp */
+.SideMenu{
+    grid-area: aside;
+    border-right: 2px solid #d6e4e5;
+    background-color: #ffffff;
+    /* max-height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar{
+    flex: 9;
+    width: 100%;
+    margin-top: 5%;
+
+}
+
+.navItem{
+    color: #000000;
+    margin: 2% 0%;
+    padding-left: 5%;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: lighter;
+    display: block;
+    font-size: 95%;
+    border-left: 3px solid #ffffff;
+}
+
+.navItem:hover{
+    background-color: hsla(13, 81%, 59%, 0.25);
+    color: black;
+    border-left: 3px solid rgba(235, 101, 64, 1);
+}
+
+.navItem:active{
+    background-color: hsla(13, 81%, 59%, 0.5);
+    color: black;
+    border-left: 3px solid rgba(235, 101, 64, 1);
+}
+
+.dcBtn{
+    text-decoration: none;
+    text-align: center;
+    flex: 0.5;
+    background-color: #ffffff;
+    border-style: none;
+    margin: 2.5% 1%;
+    height: fit-content;
+    width: 100%;
+}
+
+.navIcons{
+    padding: 0 10%;
+    opacity: 0.75;
+}
+
+

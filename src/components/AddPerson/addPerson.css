@@ -1,0 +1,330 @@
+
+/* Add Person comp */
+
+.addMerchantM{
+    border: 2px solid #d6e4e5;
+    border-radius: 5px;
+    margin: 0.5%;
+    padding: 0.5%;
+    flex: 1;
+} 
+
+.addMerchant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.nameInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 30vw;
+}
+
+.formElement{
+    flex: 1;
+    width: 30vw;
+    flex-wrap: wrap;
+    padding: 2.5px;
+    border-style: none;
+    border-bottom: 2px solid #d6e4e5;
+}
+
+.formElement:hover{
+    background-color: rgba(214, 228, 229, 0.25);
+    border-style: none;
+    border-bottom: 2px solid #d6e4e5;
+}
+
+.splitFlex{
+  flex: 1;
+
+}
+
+.submitForm{
+    width: 10vw;
+    background-color: #497174;
+    color: #ffffff;
+    border-style: none;
+    padding: 2.5px;
+    border-radius: 2px;
+}
+
+  
+  /* Style the form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  
+  .submitForm:hover {
+    background-color: #2c3e50;
+  }
+
+
+/* AddMerchant comp */
+
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+}
+
+.flexContainer>h3{
+    align-items: flex-start;
+    justify-self: flex-start;
+    justify-content: flex-start;
+}
+
+.flexItem{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #d6e4e5;
+    gap: 2.5%;
+    padding-left: 5%;
+}
+
+.shopAssign{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 2px solid #d6e4e5;
+    border-radius: 5px;
+    margin: 0.5%;
+    padding: 0.5% 5% 1% 5%;
+}
+
+.marchand{
+    height: fit-content;
+}
+
+.marchandItem{
+    margin: 0 5%;
+    padding-left: 0;
+}
+
+.merchantPfp{
+    background-color:black;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+
+}
+
+.merchantId{
+    flex: 9;
+}
+
+.merchantName{
+    color: #000000;
+}
+
+.merchantCni{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.editIcon{
+    flex: 1;
+    color: #1D72B8;
+    min-width: fit-content;
+}
+
+.deleteIcon{
+    flex: 1;
+    color: #BE1622;
+    min-width: fit-content;
+}
+
+.searchBoutique{
+    width: 100%;
+    border-style: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d6e4e5;
+    padding: 2.5px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 5px;
+  }
+  
+  .search-icon {
+    margin-right: 2.5%;
+    color: #999;
+  }
+  
+  .boutiqueItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .boutiqueItem{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px 0 10px 5px;
+  }
+
+  .boutiqueItem:hover{
+    background-color: rgba(235, 101, 64, 0.50);
+  }
+
+.boutiqueName{
+    flex: 3;
+}
+
+.BoutiqueZone{
+    flex: 1;
+}
+
+.BoutiqueFloor{
+    flex: 1;
+}
+
+.BoutiqueId{
+    flex: 1;
+}
+
+.smFf{
+    flex: 1;
+    align-self: center;
+    /* margin-top: 7.5%; */
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.smBtn{
+    width: 10vw;
+    background-color: #497174;
+    color: #ffffff;
+    border-style: none;
+    padding: 2.5px;
+    border-radius: 2px;
+}
+
+.ffBtn{
+    width: 10vw;
+    background-color: #ffffff;
+    color: #497174;
+    border: 2px solid #497174;
+    padding: 2.5px;
+    border-radius: 5px;
+}
+
+.smBtn:hover {
+    background-color: #2c3e50;
+}
+
+.ffBtn:hover {
+    background-color: rgba(44, 62, 80, 0.25);
+}
+
+
+/* Liste des affectations comp */
+
+.filterBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    width: 99%;
+    max-width: 100%;
+    box-sizing: border-box; /* Include padding and border in the total width */
+    background-color: rgba(239, 245, 245, 0.50);
+    /* padding: 0.75%; */
+    border: 2px solid rgba(73, 113, 116, 0.5);
+    border-radius: 5px;
+    margin: 15px 5px;
+}
+
+.filters{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1%;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.2;
+    /* border: 1px solid black; */
+    border-radius: 3px;
+}
+
+.filter:hover{
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+ table{
+    width: 100%;
+    border: 2px solid #efefef;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    border-spacing: 0 1px;
+    
+}
+
+ thead{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(239, 245, 245, 0.50);
+    color: rgba(73, 113, 116, 0.85);
+}
+  
+ td,
+  th {
+    border-bottom: 2px solid rgba(239, 245, 245, 0.50);
+    padding: 10px;
+    border-radius: 0; /* Reset border-radius to zero for cells */
+   } 
+  
+  .editIcon:hover, .deleteIcon:hover{
+    opacity: 0.75;
+  }
+
+  .toggle{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    z-index: 1;
+    padding:10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #eb6440;
+    border: 2px solid #eb6440;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    flex-wrap: nowrap;
+  }
+
+

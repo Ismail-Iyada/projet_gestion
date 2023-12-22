@@ -1,0 +1,88 @@
+  /* Media Queries for 1000px */
+  @media screen and (max-width: 1044px) {
+    .App {
+        grid-template-columns: 5% 3fr;
+        grid-template-rows: 7.5vh 5fr;
+      grid-template-areas:
+      "header header"
+      "aside main";
+    }
+  
+  
+    .notifUser {
+      font-size: 150%;
+    }
+  
+    .main {
+      margin: 1%;
+      padding: 1.5vh 3vh;
+    }
+  
+    .SideMenu {
+      border-bottom: 2px solid #d6e4e5;
+    
+    }
+  
+    .navBar {
+      margin-top: 25%;
+    }
+
+    .navItem{
+        padding: 0;
+        margin: 0;
+    }
+
+    .navIcons {
+        padding: 5px 10px;
+    }
+
+    .hiddenText {
+        display: none;
+      }
+
+      .dcBtn{
+        margin-left: 10px;
+        width: min-content;
+      }
+
+  }
+  
+  /* Media Queries for 500px */
+  /* @media screen and (max-width: 500px) {
+    .Header {
+      padding-right: 0;
+    }
+  
+    .title {
+      margin-left: 0;
+      flex: 1;
+      font-size: 80%;
+    }
+  
+    .notifUser {
+      font-size: 125%;
+      margin-left: 5%;
+    }
+  
+    .Bell {
+      display: none;
+    }
+  
+    .userIcon {
+      display: none;
+    }
+  
+    .userName {
+      font-size: 20%;
+    }
+  
+    .main {
+      margin: 2%;
+      padding: 1vh 2vh;
+    }
+  
+    .souk {
+      width: 100%;
+    }
+  }
+   */
